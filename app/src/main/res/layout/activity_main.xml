@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@+id/more"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/baseline_more_vert_24"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="I Stay in Love"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/mariahcarey" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="60dp"
+        android:progressTint="#FFFFFF"
+        android:thumbTint="#FFC300"
+        android:backgroundTint="#03A9F4"
+        android:progress="70"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/Singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seekbar"
+        android:layout_marginTop="60dp"
+        android:text="Mariah Carey"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Singer"
+        android:layout_marginTop="10dp"
+        android:text="I Stay in Love"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/Play"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/song_title"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/baseline_play_circle_outline_24" />
+
+    <ImageView
+        android:id="@+id/skipped"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/song_title"
+        android:layout_toRightOf="@+id/song_title"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/baseline_skip_next_24" />
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/song_title"
+        android:layout_toLeftOf="@+id/song_title"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/baseline_skip_previous_24" />
+</RelativeLayout>
+
+
+
+
+
